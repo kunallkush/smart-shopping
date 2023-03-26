@@ -1,0 +1,68 @@
+.compLogo {
+  height: 90px;
+}
+
+.cart {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 28px;
+  height: auto;
+  overflow: hidden;
+}
+.cart .material-icons {
+  position: relative;
+  top: 4px;
+  z-index: 1;
+  font-size: 24px;
+}
+.cart .count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 11px;
+  border-radius: 50%;
+  background: #d60b28;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.cart .count2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 11px;
+    border-radius: 50%;
+    background: #d60b28;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+.nav-item{
+    font-weight: 500;
+    font-size: 17px;
+}
+@media only screen and (max-width: 768px) {
+    .nav-item{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        
+    }
+    .form{
+        display: none;
+    }
+  }
+  
