@@ -148,6 +148,18 @@ function Home() {
                         <p className="text-muted">
                           Starting from ${items.price}
                         </p>
+                        <p className="text1">
+                        Category -
+                        <span style={{ color: "black" }}>{items.category}</span>
+                        ||
+                        <span>
+                          Brand -
+                          <span style={{ color: "black" }}>{items.brand}</span>
+                        </span>
+                      </p>
+                      <a className="btn btn-warning btn-sm disabled">
+                          In Stock - {items.stock}
+                        </a>
                       </div>
                       <div className="buttons">
                         <button

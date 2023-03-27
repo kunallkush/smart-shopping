@@ -61,6 +61,14 @@ textarea {
   top: 30px;
   transform: rotate(-45deg);
 }
+.text1{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rebeccapurple;
+  /* color: #686e77; */
+  font-weight: 200;
+}
 @media only screen and (max-width: 768px) {
   .row {
     margin: auto;
