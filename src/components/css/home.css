@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px) {
+    .row{
+        margin: auto;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+       display: flex;
+       flex-direction: column;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+  }
+  .buttons{
+    display: flex;
+    align-items: start;
+  }

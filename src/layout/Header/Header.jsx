@@ -11,11 +11,11 @@ function Header() {
       <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            <img className="compLogo" src="./public/logo1.png" />
+            <img className="compLogo" src="/images/logo1.png" />
           </a>
 
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -23,8 +23,8 @@ function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <div class="cart">
-              <span class="count">{product.length}</span>
+            <div className="cart">
+              <span className="count">{product.length}</span>
               <FaShoppingCart />{" "}
             </div>
             <AiOutlineArrowDown />
@@ -40,14 +40,19 @@ function Header() {
                 <Link to="cart" className="nav-link">
                   <div className="d-flex">
                     Cart
-                    <div class="cart">
-                      <span class="count">{product.length}</span>
+                    <div className="cart">
+                      <span className="count">{product.length}</span>
                       <FaShoppingCart />{" "}
                     </div>
                   </div>
                 </Link>
               </li>
               <li className="nav-item">
+                <Link to="product" className="nav-link">
+                  Product
+                </Link>
+              </li>
+              {/* <li className="nav-item">
                 <Link to="about" className="nav-link">
                   About Us
                 </Link>
@@ -56,7 +61,7 @@ function Header() {
                 <Link to="contact" className="nav-link">
                   Contact Us
                 </Link>
-              </li>
+              </li> */}
             </ul>
             <div className="form">
               <form className="d-flex" role="search">

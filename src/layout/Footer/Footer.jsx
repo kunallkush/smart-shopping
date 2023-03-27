@@ -78,7 +78,7 @@ function Footer() {
           <div className="row">
             <div className="col-md-3 footer-brand animated fadeInLeft">
               <a className="navbar-brand" href="/">
-                <img className="compLogo" src="./public/logo2.png" />
+                <img className="compLogo" src="/images/logo2.png" />
               </a>
               <p>
               Welcome to our online store, where shopping is made easy and enjoyable! We offer a wide selection of high-quality products at affordable prices, all designed to make your life easier and more comfortable. From trendy fashion items to must-have tech gadgets, we have everything you need to stay on top of your game. With secure and fast shipping, hassle-free returns, and outstanding customer service, you can shop with confidence and get the best value for your money. Don't wait any longer, start browsing our amazing collection today and experience the convenience of online shopping at its finest!
@@ -98,8 +98,8 @@ function Footer() {
                     <Link to="cart" className="nav-link">
                       <div className="d-flex">
                         Cart
-                        <div class="cart">
-                          <span class="count">{product.length}</span>
+                        <div className="cart">
+                          <span className="count">{product.length}</span>
                           <FaShoppingCart />
                         </div>
                       </div>

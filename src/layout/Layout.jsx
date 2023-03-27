@@ -7,6 +7,7 @@ import Contact from "../components/pages/Contact";
 import Cart from "../components/pages/Cart";
 import { Provider } from "react-redux";
 import store from "../Store/Store";
+import Home from "../components/pages/Home";
 function Layout({ children }) {
   return (
     <>
@@ -14,10 +15,11 @@ function Layout({ children }) {
         <Router>
           <Header />
           <Routes>
-            <Route path="/" element={<main>{children}</main>} />
+            <Route path="/" element={<Home/>} />
+            <Route path="/product" element={<main>{children}</main>} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} /> */}
           </Routes>
           <Footer />
         </Router>
