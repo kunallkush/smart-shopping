@@ -80,7 +80,6 @@ function Home() {
         document.getElementById("description_" + id).innerHTML =
           items.description;
       });
-      setLoading(true);
     });
     setIsOpen(false);
   };
