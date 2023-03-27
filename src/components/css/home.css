@@ -1,33 +1,15 @@
-@media only screen and (max-width: 768px) {
-  .row {
-    margin: auto;
-  }
-  .card-body {
-    display: flex;
-    flex-direction: column;
-  }
-  .main {
-    display: flex;
-    flex-direction: column;
-  }
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-  }
-  #modal {
-    width: 90%;
-    margin: auto;
-  }
-}
-.buttons {
-  display: flex;
-  align-items: start;
+#modal{
+  width: 40%;
 }
 textarea {
   width: 500px;
   height: 150px;
 }
+.buttons {
+  display: flex;
+  align-items: start;
+}
+
 .ribbon {
   width: 150px;
   height: 150px;
@@ -78,4 +60,26 @@ textarea {
   right: -25px;
   top: 30px;
   transform: rotate(-45deg);
+}
+@media only screen and (max-width: 768px) {
+  .row {
+    margin: auto;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+  #modal {
+    width: 90%;
+    margin: auto;
+  }
 }
