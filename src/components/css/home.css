@@ -90,4 +90,7 @@ textarea {
     width: 90%;
     margin: auto;
   }
+  #stock{
+    margin-bottom: 10px;
+  }
 }

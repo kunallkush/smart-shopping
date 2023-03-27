@@ -107,8 +107,8 @@ function Home() {
                   key={items.id}
                 >
                   <div className="ribbon ribbon-top-left">
-                      <span>{items.discountPercentage}% Off</span>
-                    </div>
+                    <span>{items.discountPercentage}% Off</span>
+                  </div>
                   <div className="main d-flex">
                     <a className="card-img-tiles" href="#" data-abc="true">
                       <div className="inner">
@@ -120,7 +120,7 @@ function Home() {
                         </div>
                       </div>
                     </a>
-                    <div className="card-body d-flex justify-content-between ">
+                    <div className="card-body d-flex justify-content-between">
                       <div>
                         <h5 className="card-title" id={"title_" + items.id}>
                           {items.title}
@@ -149,15 +149,19 @@ function Home() {
                           Starting from ${items.price}
                         </p>
                         <p className="text1">
-                        Category -
-                        <span style={{ color: "black" }}>{items.category}</span>
-                        ||
-                        <span>
-                          Brand -
-                          <span style={{ color: "black" }}>{items.brand}</span>
-                        </span>
-                      </p>
-                      <a className="btn btn-warning btn-sm disabled">
+                          Category -
+                          <span style={{ color: "black" }}>
+                            {items.category}
+                          </span>
+                          ||
+                          <span>
+                            Brand -
+                            <span style={{ color: "black" }}>
+                              {items.brand}
+                            </span>
+                          </span>
+                        </p>
+                        <a className="btn btn-warning btn-sm disabled" id="stock">
                           In Stock - {items.stock}
                         </a>
                       </div>
