@@ -85,7 +85,7 @@ function Home() {
     setIsOpen(false);
   };
   const handleDelete = (id) => {
-    dispatch(deleteData(id))
+    dispatch(deleteData(id));
   };
   return (
     <>
@@ -106,6 +106,9 @@ function Home() {
                   style={{ marginBottom: "10px" }}
                   key={items.id}
                 >
+                  <div className="ribbon ribbon-top-left">
+                      <span>{items.discountPercentage}% Off</span>
+                    </div>
                   <div className="main d-flex">
                     <a className="card-img-tiles" href="#" data-abc="true">
                       <div className="inner">
@@ -176,12 +179,13 @@ function Home() {
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
+        id="modal"
       >
         <div className="mb-3">
           <h3>Edit Your Product</h3>
         </div>
         <hr />
-        <form>
+        <form className=" main-form">
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
               Title
@@ -202,7 +206,6 @@ function Home() {
               Description
             </label>
             <textarea
-              style={{ height: "150px", width: "500px" }}
               type="text"
               className="form-control"
               id="exampleInputPassword1"

@@ -37,6 +37,11 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link to="product" className="nav-link">
+                  Product
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link to="cart" className="nav-link">
                   <div className="d-flex">
                     Cart
@@ -45,11 +50,6 @@ function Header() {
                       <FaShoppingCart />{" "}
                     </div>
                   </div>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="product" className="nav-link">
-                  Product
                 </Link>
               </li>
               {/* <li className="nav-item">
